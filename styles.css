@@ -189,12 +189,19 @@ justify-content:space-between;
 
  .footer{
   display:flex;
-  justify-content:center;
-  align-items:center;
+  flex:1;
   font-size:1.7rem;
   font-weight:200;
-  position:relative;
-  top:25vh;
+  justify-content:center;
+  align-items:flex-end;
+}
+.border-only{
+  display:flex;
+  padding-top:2rem;
+  align-items:center;
+  justify-content:center;
+   border-top:3px solid var(--main-red);
+  
 }
 .footer p{
   margin:0.5rem 1rem;
@@ -204,14 +211,12 @@ justify-content:space-between;
   color:var(--main-white);
   text-decoration:none;
 }
-hr{
+/* hr{
  width:100%;
- position:relative;
- top:20vh; 
  height:3px;
  border:none;
- background:var(--main-red);
-}
+ background:;
+} */
 
 /* Effects */
 
@@ -246,35 +251,7 @@ hr{
 /* Break points*/
 
 @media (max-width:880px){
-  .footer{
-    top: 13vh;
-  }
-  hr{
-    top:9vh;
+  h2{
+    padding:0.8rem;
   }
 }
-@media (max-width:550px){
-  .footer{
-    top: 6vh;
-  }
-  hr{
-    top:3vh;
-  }
-}
-@media (max-width:500px){
-  .footer{
-    top: 2vh;     
-  }
-  hr{
-    top:0vh;
-  }
-}
-@media (max-width:420px){
-  .footer{
-    top: 1vh;
-  }
-  hr{
-    top:0vh;
-  }
-}
-
